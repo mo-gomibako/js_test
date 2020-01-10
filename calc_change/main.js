@@ -10,10 +10,10 @@ function calcChangeNum(paidMoney, itemName) {
   const moneyNums = []
 
   if (paidMoney > 1000) {
-    throw new Exeption("1000円より大きい金額を支払おうとしています")
+    throw new Error("1000円より大きい金額を支払おうとしています")
   }
   if (!itemPrices[itemName]) {
-    throw new Exeption("選択された商品は正しく金額が設定されていません")
+    throw new Error("選択された商品は正しく金額が設定されていません")
   }
 
   let currentChange = paidMoney - itemPrices[itemName]
@@ -25,4 +25,4 @@ function calcChangeNum(paidMoney, itemName) {
   return moneyNums
 }
 
-console.log(calcChangeNum(1000, "bread"))
+console.log(calcChangeNum(1010, "bread"))
