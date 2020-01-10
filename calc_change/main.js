@@ -25,4 +25,4 @@ function calcChangeNum(paidMoney, itemName) {
   return moneyNums
 }
 
-console.log(calcChangeNum(1000, "bread")
+console.log(calcChangeNum(1000, "bread"))
